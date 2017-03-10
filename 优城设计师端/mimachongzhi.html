@@ -35,24 +35,25 @@
 				<div class="btn">
 					<button>提交</button>
 				</div>
-				<div class="zhezhao" style="display: none;">
-					<div class="zhezao_list">
+			</section>
+			<div class="zz">aa</div>
+				<div class="zz_con">
+					<div class="conment">
 						<img src="yc/denglu/bai_03.png"/>
-					<p>对不起重置失败</p>
-					<p>原因</p>
+						<p>对不起重置失败</p>
+						<p>原因</p>
 					</div>
 				</div>
-			</section>
 		</div>
 	</body>
 	<script type="text/javascript">
-		$("button").click(function(){
-			$(".zhezhao").show();
-			$(".box").css("background","#CCCCCC");
-		})
-		$(".zhezhao").click(function(){
-			$(".zhezhao").hide();
-			$(".box").css("background","white");
-		})
+	  $("button").click(function(){
+	  	$(".zz_con").show();
+	  	$(".zz").show();
+	  })
+	  $(".zz_con").click(function(){
+	  	$(".zz_con").hide();
+	  	$(".zz").hide();
+	  })
 	</script>
 </html>
