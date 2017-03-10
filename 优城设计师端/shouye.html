@@ -6,7 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/shouye.css"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <script type="text/javascript" src="js/iscroll.js">
+	    <script type="text/javascript" src="js/iscroll.js"></script>
+	    <script type="text/javascript" src="js/zepto.min.js">
 	    	
 	    </script>
 	</head>
@@ -20,7 +21,9 @@
 			</header>
 			<section id="aaa">
 				<div>
-					<div class="title">
+					<div class="big_box">
+					<div class="one">
+						<div class="title">
 						<div class="t_left">
 							<dl>
 								<dt><img src="yc/shouye/a_07.png"/></dt>
@@ -162,10 +165,24 @@
 							<span>16/08/10</span>
 						</div>
 					</div>
+					</div>	
+					<div class="two">
+				      <h2>司杰武是傻逼,臭傻逼</h2>
+					</div>	
+					<div class="three">
+						<h2>我是司杰武的小妈</h2>
+					</div>	
+					<div class="four">
+						<h2>司杰武是个傻逼，又笨，跟不上时代的潮流，又黑，有低，又丑，有自恋,</h2>
+					</div>	
+					<div class="five">
+						<h2>司杰武是个大傻帽，而且像毛驴一样，而且就因为太无奈，傻逼一样，不想多说什么，多说无益用在你身上一点不过分</h2>
+					</div>	
+					</div>
 				</div>
 			</section >
 			<footer>
-				<dl>
+				<dl class="active">
 					<dt><img src="yc/shouye/a_49.png"/></dt>
 					<dd>首页</dd>
 				</dl>
@@ -194,5 +211,9 @@
 	disablePointer:true,
 	scrollbars:'custom'					
     });
+    $("footer dl").tap(function(){
+    	$(".big_box>div").eq($(this).index()).show().siblings().hide();
+    	$(this).addClass("active").siblings().removeClass("active");
+    })
 	</script>
 </html>
